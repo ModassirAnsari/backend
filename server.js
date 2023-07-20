@@ -241,7 +241,7 @@ app.delete('/suppliers/:id', async (req, res) => {
 });
 
 // Start the server
-const port = 1998;
+const port = process.env.PORT ||1998;
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });
